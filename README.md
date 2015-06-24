@@ -1,2 +1,2 @@
 # JKBCrypt
-A Swift implementation of bcrypt
+An implementation of bcrypt
