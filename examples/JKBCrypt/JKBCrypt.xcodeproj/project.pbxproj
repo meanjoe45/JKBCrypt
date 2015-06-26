@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D838F33A1B348F4300D30D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838F3391B348F4300D30D14 /* AppDelegate.swift */; };
+		D838F33C1B348F4300D30D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838F33B1B348F4300D30D14 /* ViewController.swift */; };
+		D838F33F1B348F4300D30D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D838F33D1B348F4300D30D14 /* Main.storyboard */; };
+		D838F3411B348F4300D30D14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D838F3401B348F4300D30D14 /* Images.xcassets */; };
+		D838F3441B348F4300D30D14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D838F3421B348F4300D30D14 /* LaunchScreen.xib */; };
+		D838F3501B348F4300D30D14 /* JKBCryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D838F34F1B348F4300D30D14 /* JKBCryptTests.swift */; };
+		D846364D1B3A81AF00F5ADE7 /* JKBCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846364B1B3A81AF00F5ADE7 /* JKBCrypt.swift */; };
+		D846364E1B3A81AF00F5ADE7 /* JKBCryptRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = D846364C1B3A81AF00F5ADE7 /* JKBCryptRandom.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D838F34A1B348F4300D30D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D838F32C1B348F4300D30D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D838F3331B348F4300D30D14;
+			remoteInfo = JKBCrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D838F3341B348F4300D30D14 /* JKBCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKBCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D838F3381B348F4300D30D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D838F3391B348F4300D30D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D838F33B1B348F4300D30D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D838F33E1B348F4300D30D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D838F3401B348F4300D30D14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D838F3431B348F4300D30D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D838F3491B348F4300D30D14 /* JKBCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKBCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D838F34E1B348F4300D30D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D838F34F1B348F4300D30D14 /* JKBCryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JKBCryptTests.swift; sourceTree = "<group>"; };
+		D846364B1B3A81AF00F5ADE7 /* JKBCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JKBCrypt.swift; path = ../../../lib/JKBCrypt.swift; sourceTree = "<group>"; };
+		D846364C1B3A81AF00F5ADE7 /* JKBCryptRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JKBCryptRandom.swift; path = ../../../lib/JKBCryptRandom.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D838F3311B348F4300D30D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D838F3461B348F4300D30D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D838F32B1B348F4300D30D14 = {
+			isa = PBXGroup;
+			children = (
+				D838F3361B348F4300D30D14 /* JKBCrypt */,
+				D838F34C1B348F4300D30D14 /* JKBCryptTests */,
+				D838F3351B348F4300D30D14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D838F3351B348F4300D30D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D838F3341B348F4300D30D14 /* JKBCrypt.app */,
+				D838F3491B348F4300D30D14 /* JKBCryptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D838F3361B348F4300D30D14 /* JKBCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				D838F3391B348F4300D30D14 /* AppDelegate.swift */,
+				D838F33B1B348F4300D30D14 /* ViewController.swift */,
+				D846364B1B3A81AF00F5ADE7 /* JKBCrypt.swift */,
+				D846364C1B3A81AF00F5ADE7 /* JKBCryptRandom.swift */,
+				D838F33D1B348F4300D30D14 /* Main.storyboard */,
+				D838F3401B348F4300D30D14 /* Images.xcassets */,
+				D838F3421B348F4300D30D14 /* LaunchScreen.xib */,
+				D838F3371B348F4300D30D14 /* Supporting Files */,
+			);
+			path = JKBCrypt;
+			sourceTree = "<group>";
+		};
+		D838F3371B348F4300D30D14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D838F3381B348F4300D30D14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D838F34C1B348F4300D30D14 /* JKBCryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				D838F34F1B348F4300D30D14 /* JKBCryptTests.swift */,
+				D838F34D1B348F4300D30D14 /* Supporting Files */,
+			);
+			path = JKBCryptTests;
+			sourceTree = "<group>";
+		};
+		D838F34D1B348F4300D30D14 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D838F34E1B348F4300D30D14 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D838F3331B348F4300D30D14 /* JKBCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D838F3531B348F4300D30D14 /* Build configuration list for PBXNativeTarget "JKBCrypt" */;
+			buildPhases = (
+				D838F3301B348F4300D30D14 /* Sources */,
+				D838F3311B348F4300D30D14 /* Frameworks */,
+				D838F3321B348F4300D30D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKBCrypt;
+			productName = JKBCrypt;
+			productReference = D838F3341B348F4300D30D14 /* JKBCrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D838F3481B348F4300D30D14 /* JKBCryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D838F3561B348F4300D30D14 /* Build configuration list for PBXNativeTarget "JKBCryptTests" */;
+			buildPhases = (
+				D838F3451B348F4300D30D14 /* Sources */,
+				D838F3461B348F4300D30D14 /* Frameworks */,
+				D838F3471B348F4300D30D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D838F34B1B348F4300D30D14 /* PBXTargetDependency */,
+			);
+			name = JKBCryptTests;
+			productName = JKBCryptTests;
+			productReference = D838F3491B348F4300D30D14 /* JKBCryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D838F32C1B348F4300D30D14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Joe Kramer";
+				TargetAttributes = {
+					D838F3331B348F4300D30D14 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D838F3481B348F4300D30D14 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D838F3331B348F4300D30D14;
+					};
+				};
+			};
+			buildConfigurationList = D838F32F1B348F4300D30D14 /* Build configuration list for PBXProject "JKBCrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D838F32B1B348F4300D30D14;
+			productRefGroup = D838F3351B348F4300D30D14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D838F3331B348F4300D30D14 /* JKBCrypt */,
+				D838F3481B348F4300D30D14 /* JKBCryptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D838F3321B348F4300D30D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D838F33F1B348F4300D30D14 /* Main.storyboard in Resources */,
+				D838F3441B348F4300D30D14 /* LaunchScreen.xib in Resources */,
+				D838F3411B348F4300D30D14 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D838F3471B348F4300D30D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D838F3301B348F4300D30D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D846364D1B3A81AF00F5ADE7 /* JKBCrypt.swift in Sources */,
+				D846364E1B3A81AF00F5ADE7 /* JKBCryptRandom.swift in Sources */,
+				D838F33C1B348F4300D30D14 /* ViewController.swift in Sources */,
+				D838F33A1B348F4300D30D14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D838F3451B348F4300D30D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D838F3501B348F4300D30D14 /* JKBCryptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D838F34B1B348F4300D30D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D838F3331B348F4300D30D14 /* JKBCrypt */;
+			targetProxy = D838F34A1B348F4300D30D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D838F33D1B348F4300D30D14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D838F33E1B348F4300D30D14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D838F3421B348F4300D30D14 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D838F3431B348F4300D30D14 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D838F3511B348F4300D30D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D838F3521B348F4300D30D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D838F3541B348F4300D30D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKBCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D838F3551B348F4300D30D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JKBCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D838F3571B348F4300D30D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JKBCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKBCrypt.app/JKBCrypt";
+			};
+			name = Debug;
+		};
+		D838F3581B348F4300D30D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = JKBCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKBCrypt.app/JKBCrypt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D838F32F1B348F4300D30D14 /* Build configuration list for PBXProject "JKBCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D838F3511B348F4300D30D14 /* Debug */,
+				D838F3521B348F4300D30D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D838F3531B348F4300D30D14 /* Build configuration list for PBXNativeTarget "JKBCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D838F3541B348F4300D30D14 /* Debug */,
+				D838F3551B348F4300D30D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D838F3561B348F4300D30D14 /* Build configuration list for PBXNativeTarget "JKBCryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D838F3571B348F4300D30D14 /* Debug */,
+				D838F3581B348F4300D30D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D838F32C1B348F4300D30D14 /* Project object */;
+}
