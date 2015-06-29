@@ -368,10 +368,11 @@ class JKBCrypt: NSObject {
     */
     class func generateSaltWithNumberOfRounds(rounds: UInt) -> String {
         var randomData : NSData = JKBCryptRandom.generateRandomSignedDataOfLength(BCRYPT_SALT_LEN)
-        
+
         var salt : String
-        salt = "$2a$" + ((rounds < 10) ? "0" : "") + "\(rounds)" + "$" + JKBCrypt.encodeData(randomData, ofLength: UInt(randomData.length))
-        
+        salt =  "$2a$" + ((rounds < 10) ? "0" : "") + "\(rounds)" + "$"
+        salt += JKBCrypt.encodeData(randomData, ofLength: UInt(randomData.length))
+
         return salt
     }
 
@@ -391,7 +392,7 @@ class JKBCrypt: NSObject {
         :param: salt        The salt to use in the hash.
 
         The `salt` must be 16 characters in length. Also, the `salt` must be properly formatted
-        with accpeted version, revision, and salt rounds. If any of this is not true, nil is
+        with accepted version, revision, and salt rounds. If any of this is not true, nil is
         returned.
 
         :returns: String?  The hashed password.
@@ -465,6 +466,27 @@ class JKBCrypt: NSObject {
         }
 
         return nil
+    }
+
+    /**
+        Hashes the provided password with the provided hash and compares if the two hashes are equal.
+
+        :param: password    The password to hash.
+        :param: hash        The hash to use in generating and comparing the password.
+
+        The `hash` must be properly formatted with accepted version, revision, and salt rounds. If
+        any of this is not true, nil is returned.
+
+        :returns: Bool?     TRUE if the password hash matches the given hash; FALSE if the two do not
+                            match; nil if hash is improperly formatted.
+    */
+    class func verifyPassword(password: String, matchesHash hash: String) -> Bool? {
+        if let hashedPassword = JKBCrypt.hashPassword(password, withSalt: hash) {
+            return hashedPassword == hash
+        }
+        else {
+            return nil
+        }
     }
 
     // MARK: - Private Class Methods
