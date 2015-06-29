@@ -25,22 +25,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func createHashPressed() {
-        // var salt = "$2a$10$L5TwXCAkaJdQAEWj1xlV9O" // 1H6TfvotmP9NvLZ3KXLFuqySNxYwu7i
-
         if let hash = JKBCrypt.hashPassword(self.hashInputTextField.text, withSalt: self.generateSalt()) {
             self.hashLabel.text = hash
         }
         else {
             self.hashLabel.text = "Hash generation failed"
         }
-
-        let sb: UIStoryboard = UIStoryboard(name: "sbname", bundle: nil)
-        var vc: ViewController = sb.instantiateViewControllerWithIdentifier("thisVC") as! ViewController
     }
 
     @IBAction func compareHashPressed() {
-        if let compare = JKBCrypt.hashPassword(self.compareInputTextField.text, withSalt:self.hashLabel.text!) {
-            if compare == self.hashLabel.text {
+        if let compare = JKBCrypt.verifyPassword(self.compareInputTextField.text, matchesHash:self.hashLabel.text!) {
+            if compare {
                 self.compareLabel.text = "The phrase was a SUCCESS!"
             }
             else {
