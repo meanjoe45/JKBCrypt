@@ -15,7 +15,7 @@ JKBCrypt.hashPassword(password: String, withSalt salt: String) -> String?
 JKBCrypt.verifyPassword(password: String, matchesHash hash: String) -> Bool?
 ```
 
-The `generateSaltWithNumberOfRounds()` class function with generate a random salt using the number of rounds provided. The number of rounds must be between 4 and 31 inclusively.
+The `generateSaltWithNumberOfRounds()` class function will generate a random salt using the number of rounds provided. The number of rounds must be between 4 and 31 inclusively.
 
 The `generateSalt()` class convenience function will generate a random salt using a default 10 rounds. This number can be adjusted based on your specific needs.
 
