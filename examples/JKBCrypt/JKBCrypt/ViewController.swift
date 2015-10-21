@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func createHashPressed() {
-        if let hash = JKBCrypt.hashPassword(self.hashInputTextField.text, withSalt: self.generateSalt()) {
+        if let hash = JKBCrypt.hashPassword(self.hashInputTextField.text!, withSalt: self.generateSalt()) {
             self.hashLabel.text = hash
         }
         else {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func compareHashPressed() {
-        if let compare = JKBCrypt.verifyPassword(self.compareInputTextField.text, matchesHash:self.hashLabel.text!) {
+        if let compare = JKBCrypt.verifyPassword(self.compareInputTextField.text!, matchesHash:self.hashLabel.text!) {
             if compare {
                 self.compareLabel.text = "The phrase was a SUCCESS!"
             }
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     // MARK: - Internal Methods
 
     func generateSalt() -> String {
-        let rounds : Int? = self.saltInputTextField.text.toInt()
+        let rounds : Int? = Int(self.saltInputTextField.text!)
 
         var salt : String
         if rounds != nil && rounds >= 4 && rounds <= 31 {
