@@ -1,0 +1,6 @@
+framework module Pods_JKBCrypt_Tests {
+  umbrella header "Pods-JKBCrypt_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,8 @@ JKBCrypt is an implementation of bcrypt written in Swift. It currently is able t
 
 Import the files from the `lib/` directory into your Swift project where you feel is appropriate. Eventually, I'd like to get this project into a CocoaPod, but this has not happened yet.
 
+Or use the CocoaPod.
+
 ## Using the Code
 
 ```
@@ -31,15 +33,11 @@ There is an example Xcode project that uses the JKBCrypt functions to calculate 
 
 ### Testing
 
-Provide suitable unit tests for the functions in the `JKBCrypt` and `JKBCryptRandom` classes.
+More tests for the functions in the `JKBCrypt` and `JKBCryptRandom` classes.
 
 ### Optimization
 
-The code was written using Swift 1.2 and has not been run against Swift 2.0 yet. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds).
-
-### CocoaPods
-
-Create a pod for this code for easy imports and updates.
+The code was written in Swift2. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds)._Needs to be verified for Swift2._
 
 ## Issues, Bugs, etc.
 

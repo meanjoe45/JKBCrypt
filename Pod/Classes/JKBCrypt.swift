@@ -381,7 +381,7 @@ let index_64 : [Int8]  = [
 
 // MARK: -
 
-class JKBCrypt: NSObject {
+public class JKBCrypt: NSObject {
 
     // MARK: Property List
 
@@ -406,7 +406,7 @@ class JKBCrypt: NSObject {
 
         :returns: String    The generated salt
     */
-    class func generateSaltWithNumberOfRounds(rounds: UInt) -> String {
+    public class func generateSaltWithNumberOfRounds(rounds: UInt) -> String {
         let randomData : NSData = JKBCryptRandom.generateRandomSignedDataOfLength(BCRYPT_SALT_LEN)
 
         var salt : String
@@ -421,7 +421,7 @@ class JKBCrypt: NSObject {
 
         :returns: String    The generated salt.
     */
-    class func generateSalt() -> String {
+    public class func generateSalt() -> String {
         return JKBCrypt.generateSaltWithNumberOfRounds(10)
     }
 
@@ -437,10 +437,9 @@ class JKBCrypt: NSObject {
 
         :returns: String?  The hashed password.
     */
-    class func hashPassword(password: String, withSalt salt: String) -> String? {
+    public class func hashPassword(password: String, withSalt salt: String) -> String? {
         var bCrypt         : JKBCrypt
         var realSalt       : String
-        var hashedData     : NSData
         var minor          : Character = "\000"[0]
         var off            : Int = 0
 
@@ -478,7 +477,7 @@ class JKBCrypt: NSObject {
             // Invalid number of rounds
             return nil
         }
-        var rounds : Int = extactedRounds!
+        let rounds : Int = extactedRounds!
 
         range = Range(start: off + 3, end: off + 25)
         realSalt = salt[range]
@@ -488,8 +487,8 @@ class JKBCrypt: NSObject {
             passwordPreEncoding += "\0"
         }
 
-        var passwordData : NSData? = (passwordPreEncoding as NSString).dataUsingEncoding(NSUTF8StringEncoding)
-        var saltData : NSData? = JKBCrypt.decode_base64(realSalt, ofMaxLength: BCRYPT_SALT_LEN)
+        let passwordData : NSData? = (passwordPreEncoding as NSString).dataUsingEncoding(NSUTF8StringEncoding)
+        let saltData : NSData? = JKBCrypt.decode_base64(realSalt, ofMaxLength: BCRYPT_SALT_LEN)
 
         if passwordData != nil && saltData != nil {
             bCrypt = JKBCrypt()
@@ -498,8 +497,8 @@ class JKBCrypt: NSObject {
 
                 hashedPassword += ((rounds < 10) ? "0" : "") + "\(rounds)" + "$"
 
-                var saltString = JKBCrypt.encodeData(saltData!, ofLength: UInt(saltData!.length))
-                var hashedString = JKBCrypt.encodeData(hashedData, ofLength: 23)
+                let saltString = JKBCrypt.encodeData(saltData!, ofLength: UInt(saltData!.length))
+                let hashedString = JKBCrypt.encodeData(hashedData, ofLength: 23)
 
                 return hashedPassword + saltString + hashedString
             }
@@ -520,7 +519,7 @@ class JKBCrypt: NSObject {
         :returns: Bool?     TRUE if the password hash matches the given hash; FALSE if the two do not
                             match; nil if hash is improperly formatted.
     */
-    class func verifyPassword(password: String, matchesHash hash: String) -> Bool? {
+    public class func verifyPassword(password: String, matchesHash hash: String) -> Bool? {
         if let hashedPassword = JKBCrypt.hashPassword(password, withSalt: hash) {
             return hashedPassword == hash
         }
@@ -616,7 +615,7 @@ class JKBCrypt: NSObject {
     */
     class private func decode_base64(s: String, ofMaxLength maxolen: Int) -> NSData? {
         var off : Int = 0
-        var slen : Int = s.characters.count
+        let slen : Int = s.characters.count
         var olen : Int = 0
         var result : [Int8] = [Int8](count: maxolen, repeatedValue: 0)
 
@@ -630,10 +629,7 @@ class JKBCrypt: NSObject {
             // Invalid number of characters.
             return nil
         }
-
-        var v1 : UInt8
-        var v2 : UnicodeScalar
-
+        
         while off < slen - 1 && olen < maxolen {
             c1 = JKBCrypt.char64of(s[off++])
             c2 = JKBCrypt.char64of(s[off++])

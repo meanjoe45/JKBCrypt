@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EFB082F57C59B8DD45F117C32CD458E /* JKBCrypt.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 344FE249555BE4DEA117A81DB9AE54F4 /* JKBCrypt.bundle */; };
+		26499EEEE4C08D482DDA0A86FE446CDD /* JKBCrypt-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7809405F4E3F2D32AFF361D31D7F99 /* JKBCrypt-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2938F178078C7DDFBABF218EE8BB2EE6 /* Pods-JKBCrypt_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0322C88F0B24D1FA6089B2B13E63619A /* Pods-JKBCrypt_Tests-dummy.m */; };
+		4346CB7C6657D70846507135AFE3539E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		543B4252F6D5BF591C20B6414F924EAB /* Pods-JKBCrypt_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D6BFD248E2AB8D085252749A875F739 /* Pods-JKBCrypt_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9565D6A4BC882C953F7D348DCD7D32F5 /* JKBCrypt-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C9BE513FBD580AD33895C5C95FB737B8 /* JKBCrypt-dummy.m */; };
+		A689D8151C98264C0041FC40 /* JKBCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A97414DE96C619B5B83B7BAD733BCC /* JKBCrypt.swift */; };
+		A689D8171C9826510041FC40 /* JKBCryptRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF644519E8ACD2C877A629A2A460FE /* JKBCryptRandom.swift */; };
+		AB99388EF39123FEFCC63F639766E5BB /* JKBCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A97414DE96C619B5B83B7BAD733BCC /* JKBCrypt.swift */; };
+		B0EECBDCE3DEE1423CCA305BD90F6640 /* JKBCryptRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EF644519E8ACD2C877A629A2A460FE /* JKBCryptRandom.swift */; };
+		EFC13CB7CACE6162E29D5177F839AD6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDD1DD1355F2235DD2A2AA46C5D9B1A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92525BA9280C2163CE90DA4637F7DD9B;
+			remoteInfo = JKBCrypt;
+		};
+		E7BD563D6B1FC7B0020BBCF4F96D7561 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34107AB19EBBB2765C46CED767C40E17;
+			remoteInfo = "JKBCrypt-JKBCrypt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0322C88F0B24D1FA6089B2B13E63619A /* Pods-JKBCrypt_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKBCrypt_Tests-dummy.m"; sourceTree = "<group>"; };
+		0D6BFD248E2AB8D085252749A875F739 /* Pods-JKBCrypt_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKBCrypt_Tests-umbrella.h"; sourceTree = "<group>"; };
+		23A97414DE96C619B5B83B7BAD733BCC /* JKBCrypt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JKBCrypt.swift; sourceTree = "<group>"; };
+		2C05C986257D9F6D9D7B232B73514731 /* JKBCrypt-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKBCrypt-prefix.pch"; sourceTree = "<group>"; };
+		344FE249555BE4DEA117A81DB9AE54F4 /* JKBCrypt.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKBCrypt.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		676B6160EA6396E634921C0CBB45AC54 /* Pods-JKBCrypt_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKBCrypt_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6942AAD77C6E581745BE62631180A980 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EF644519E8ACD2C877A629A2A460FE /* JKBCryptRandom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JKBCryptRandom.swift; sourceTree = "<group>"; };
+		8B6DBB293B2EE38C7660062D079F5830 /* Pods_JKBCrypt_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKBCrypt_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C419907FD0BD26A4A55D9B2ACC9187B /* Pods-JKBCrypt_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKBCrypt_Tests-resources.sh"; sourceTree = "<group>"; };
+		8EE7A82CF7CE5CC0479EA6FE5F790DE7 /* Pods-JKBCrypt_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKBCrypt_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9228752CEFEC78A06E2F8160F4B97EBB /* Pods-JKBCrypt_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKBCrypt_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9609FA2F87F740855636B7DA2AA2037F /* Pods-JKBCrypt_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKBCrypt_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB7809405F4E3F2D32AFF361D31D7F99 /* JKBCrypt-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKBCrypt-umbrella.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3E1FF44826AB91492709F3A1DC3F6C2 /* Pods-JKBCrypt_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKBCrypt_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C9BE513FBD580AD33895C5C95FB737B8 /* JKBCrypt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKBCrypt-dummy.m"; sourceTree = "<group>"; };
+		D67173B92087ED24CA1DEE9268C0C8CD /* Pods-JKBCrypt_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKBCrypt_Tests.modulemap"; sourceTree = "<group>"; };
+		DAC17220A18119F85C586E36D7FFA3EB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKBCrypt.xcconfig; sourceTree = "<group>"; };
+		E786ED3F47250F9FAD14B3216BFB3E72 /* JKBCrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKBCrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D1C68BE98B52EFD20838AF628FA3B6 /* JKBCrypt.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JKBCrypt.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E5A9E8395901E92CF32FCA4576973B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4346CB7C6657D70846507135AFE3539E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85536517C57264712E047E59B653B167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C42754E8D83E811A3ADDAD48EDDA70EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFC13CB7CACE6162E29D5177F839AD6F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063070DCBD2DC08D1872A74B59AE48B0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30D5FDAC361F664065886949D5F62AB7 /* JKBCrypt */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		076A2176AC623F111A1904FEDF10C895 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6942AAD77C6E581745BE62631180A980 /* Info.plist */,
+				F5D1C68BE98B52EFD20838AF628FA3B6 /* JKBCrypt.modulemap */,
+				E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */,
+				C9BE513FBD580AD33895C5C95FB737B8 /* JKBCrypt-dummy.m */,
+				2C05C986257D9F6D9D7B232B73514731 /* JKBCrypt-prefix.pch */,
+				AB7809405F4E3F2D32AFF361D31D7F99 /* JKBCrypt-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKBCrypt";
+			sourceTree = "<group>";
+		};
+		0B04CB5BCB852AD2B4ADD37A57206133 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A7A3DC35EE9AB8E6CDDB397F271BA151 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		30D5FDAC361F664065886949D5F62AB7 /* JKBCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				0B04CB5BCB852AD2B4ADD37A57206133 /* Pod */,
+				076A2176AC623F111A1904FEDF10C895 /* Support Files */,
+			);
+			name = JKBCrypt;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		692F8CAA48028DDA559A1E2AA48773F2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F8AE915E2501687F40D086315EE5A3 /* Pods-JKBCrypt_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		74F8AE915E2501687F40D086315EE5A3 /* Pods-JKBCrypt_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DAC17220A18119F85C586E36D7FFA3EB /* Info.plist */,
+				D67173B92087ED24CA1DEE9268C0C8CD /* Pods-JKBCrypt_Tests.modulemap */,
+				8EE7A82CF7CE5CC0479EA6FE5F790DE7 /* Pods-JKBCrypt_Tests-acknowledgements.markdown */,
+				9228752CEFEC78A06E2F8160F4B97EBB /* Pods-JKBCrypt_Tests-acknowledgements.plist */,
+				0322C88F0B24D1FA6089B2B13E63619A /* Pods-JKBCrypt_Tests-dummy.m */,
+				676B6160EA6396E634921C0CBB45AC54 /* Pods-JKBCrypt_Tests-frameworks.sh */,
+				8C419907FD0BD26A4A55D9B2ACC9187B /* Pods-JKBCrypt_Tests-resources.sh */,
+				0D6BFD248E2AB8D085252749A875F739 /* Pods-JKBCrypt_Tests-umbrella.h */,
+				9609FA2F87F740855636B7DA2AA2037F /* Pods-JKBCrypt_Tests.debug.xcconfig */,
+				C3E1FF44826AB91492709F3A1DC3F6C2 /* Pods-JKBCrypt_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKBCrypt_Tests";
+			path = "Target Support Files/Pods-JKBCrypt_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				063070DCBD2DC08D1872A74B59AE48B0 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FC5E233916403F53FCF6363B07C9CD2B /* Products */,
+				692F8CAA48028DDA559A1E2AA48773F2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A7A3DC35EE9AB8E6CDDB397F271BA151 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				23A97414DE96C619B5B83B7BAD733BCC /* JKBCrypt.swift */,
+				73EF644519E8ACD2C877A629A2A460FE /* JKBCryptRandom.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FC5E233916403F53FCF6363B07C9CD2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				344FE249555BE4DEA117A81DB9AE54F4 /* JKBCrypt.bundle */,
+				E786ED3F47250F9FAD14B3216BFB3E72 /* JKBCrypt.framework */,
+				8B6DBB293B2EE38C7660062D079F5830 /* Pods_JKBCrypt_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8FB52B58239C4FC81CFEB7B8F976DA09 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B4252F6D5BF591C20B6414F924EAB /* Pods-JKBCrypt_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94E34CAE2064A4DBD0E8CF9C0BFDFF59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26499EEEE4C08D482DDA0A86FE446CDD /* JKBCrypt-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		331A13DA923EAD5A25E9D748C1F66CD9 /* Pods-JKBCrypt_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E20FFE6994839EC0543249327EE5FCF /* Build configuration list for PBXNativeTarget "Pods-JKBCrypt_Tests" */;
+			buildPhases = (
+				201F05CE4B75A9F12E22D05F63C599F7 /* Sources */,
+				C42754E8D83E811A3ADDAD48EDDA70EA /* Frameworks */,
+				8FB52B58239C4FC81CFEB7B8F976DA09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				389407914E3DA0CE49F3737862A7F83E /* PBXTargetDependency */,
+			);
+			name = "Pods-JKBCrypt_Tests";
+			productName = "Pods-JKBCrypt_Tests";
+			productReference = 8B6DBB293B2EE38C7660062D079F5830 /* Pods_JKBCrypt_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		34107AB19EBBB2765C46CED767C40E17 /* JKBCrypt-JKBCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9ED68B186264FB68FCC5D465443ED2E /* Build configuration list for PBXNativeTarget "JKBCrypt-JKBCrypt" */;
+			buildPhases = (
+				0BDAF0896A1B4C0D1A3F5ECDD555003B /* Sources */,
+				85536517C57264712E047E59B653B167 /* Frameworks */,
+				FB19E78DFB30A400214FC534D0E2D350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JKBCrypt-JKBCrypt";
+			productName = "JKBCrypt-JKBCrypt";
+			productReference = 344FE249555BE4DEA117A81DB9AE54F4 /* JKBCrypt.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		92525BA9280C2163CE90DA4637F7DD9B /* JKBCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E00A225D7DAC7C2EFE078CF1E52A24C /* Build configuration list for PBXNativeTarget "JKBCrypt" */;
+			buildPhases = (
+				21292F77034332589A0F4AB96AE509B6 /* Sources */,
+				75E5A9E8395901E92CF32FCA4576973B /* Frameworks */,
+				FD16908414B1D3C4B2EE9705DC7C166F /* Resources */,
+				94E34CAE2064A4DBD0E8CF9C0BFDFF59 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42DBFAD105AF3734456BE0097693695C /* PBXTargetDependency */,
+			);
+			name = JKBCrypt;
+			productName = JKBCrypt;
+			productReference = E786ED3F47250F9FAD14B3216BFB3E72 /* JKBCrypt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FC5E233916403F53FCF6363B07C9CD2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92525BA9280C2163CE90DA4637F7DD9B /* JKBCrypt */,
+				34107AB19EBBB2765C46CED767C40E17 /* JKBCrypt-JKBCrypt */,
+				331A13DA923EAD5A25E9D748C1F66CD9 /* Pods-JKBCrypt_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB19E78DFB30A400214FC534D0E2D350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD16908414B1D3C4B2EE9705DC7C166F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EFB082F57C59B8DD45F117C32CD458E /* JKBCrypt.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BDAF0896A1B4C0D1A3F5ECDD555003B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A689D8151C98264C0041FC40 /* JKBCrypt.swift in Sources */,
+				A689D8171C9826510041FC40 /* JKBCryptRandom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201F05CE4B75A9F12E22D05F63C599F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2938F178078C7DDFBABF218EE8BB2EE6 /* Pods-JKBCrypt_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21292F77034332589A0F4AB96AE509B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9565D6A4BC882C953F7D348DCD7D32F5 /* JKBCrypt-dummy.m in Sources */,
+				AB99388EF39123FEFCC63F639766E5BB /* JKBCrypt.swift in Sources */,
+				B0EECBDCE3DEE1423CCA305BD90F6640 /* JKBCryptRandom.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		389407914E3DA0CE49F3737862A7F83E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKBCrypt;
+			target = 92525BA9280C2163CE90DA4637F7DD9B /* JKBCrypt */;
+			targetProxy = DDD1DD1355F2235DD2A2AA46C5D9B1A5 /* PBXContainerItemProxy */;
+		};
+		42DBFAD105AF3734456BE0097693695C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "JKBCrypt-JKBCrypt";
+			target = 34107AB19EBBB2765C46CED767C40E17 /* JKBCrypt-JKBCrypt */;
+			targetProxy = E7BD563D6B1FC7B0020BBCF4F96D7561 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F2D362A953E3549870500A4FFE015F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKBCrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		36BC99CE92637F08B3A8791EF443B7CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKBCrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8250AC3101A1C7F95EE068D72A660E65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JKBCrypt/JKBCrypt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKBCrypt/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKBCrypt/JKBCrypt.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JKBCrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A249375191319B7A04843ECE8212B474 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9609FA2F87F740855636B7DA2AA2037F /* Pods-JKBCrypt_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKBCrypt_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKBCrypt_Tests/Pods-JKBCrypt_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKBCrypt_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A2B39EE040DCD1860BDA5AF2077FF420 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E341DDE5A5CFD49E8CE4D24BBDFCDEA8 /* JKBCrypt.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JKBCrypt/JKBCrypt-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKBCrypt/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKBCrypt/JKBCrypt.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JKBCrypt;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8E17C67B8EC1C927B6D4E4B792EDED1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3E1FF44826AB91492709F3A1DC3F6C2 /* Pods-JKBCrypt_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKBCrypt_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKBCrypt_Tests/Pods-JKBCrypt_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKBCrypt_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E00A225D7DAC7C2EFE078CF1E52A24C /* Build configuration list for PBXNativeTarget "JKBCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8250AC3101A1C7F95EE068D72A660E65 /* Debug */,
+				A2B39EE040DCD1860BDA5AF2077FF420 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E20FFE6994839EC0543249327EE5FCF /* Build configuration list for PBXNativeTarget "Pods-JKBCrypt_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A249375191319B7A04843ECE8212B474 /* Debug */,
+				E8E17C67B8EC1C927B6D4E4B792EDED1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9ED68B186264FB68FCC5D465443ED2E /* Build configuration list for PBXNativeTarget "JKBCrypt-JKBCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36BC99CE92637F08B3A8791EF443B7CA /* Debug */,
+				2F2D362A953E3549870500A4FFE015F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
