@@ -50,7 +50,7 @@ import Foundation
 
 extension String {
     subscript (i: Int) -> Character {
-        return self[advance(self.startIndex, i)]
+        return self[self.startIndex.advancedBy(i)]
     }
 
     subscript (i: Int) -> String {
@@ -58,7 +58,9 @@ extension String {
     }
 
     subscript (r: Range<Int>) -> String {
-        return substringWithRange(Range(start: advance(startIndex, r.startIndex), end: advance(startIndex, r.endIndex)))
+        let start = startIndex.advancedBy(r.startIndex)
+        let end = start.advancedBy(r.endIndex - r.startIndex)
+        return substringWithRange(Range(start: start, end: end))
     }
 }
 
@@ -405,7 +407,7 @@ class JKBCrypt: NSObject {
         :returns: String    The generated salt
     */
     class func generateSaltWithNumberOfRounds(rounds: UInt) -> String {
-        var randomData : NSData = JKBCryptRandom.generateRandomSignedDataOfLength(BCRYPT_SALT_LEN)
+        let randomData : NSData = JKBCryptRandom.generateRandomSignedDataOfLength(BCRYPT_SALT_LEN)
 
         var salt : String
         salt =  "$2a$" + ((rounds < 10) ? "0" : "") + "\(rounds)" + "$"
@@ -443,7 +445,7 @@ class JKBCrypt: NSObject {
         var off            : Int = 0
 
         // If the salt length is too short, it is invalid
-        if count(salt) < BCRYPT_SALT_LEN {
+        if salt.characters.count < BCRYPT_SALT_LEN {
             return nil
         }
 
@@ -471,7 +473,7 @@ class JKBCrypt: NSObject {
         }
 
         var range : Range = Range(start: off, end: off+2)
-        let extactedRounds = salt[range].toInt()
+        let extactedRounds = Int(salt[range])
         if extactedRounds == nil {
             // Invalid number of rounds
             return nil
@@ -593,7 +595,7 @@ class JKBCrypt: NSObject {
         :returns: Int8  The Base64 encoded signed character or -1 if none exists.
     */
     class private func char64of(x: Character) -> Int8 {
-        var xAsInt : Int32 = Int32(x.utf16Value())
+        let xAsInt : Int32 = Int32(x.utf16Value())
 
         if xAsInt < 0 || xAsInt > 128 - 1 {
             // The character would go out of bounds of the pre-calculated array so return -1.
@@ -614,7 +616,7 @@ class JKBCrypt: NSObject {
     */
     class private func decode_base64(s: String, ofMaxLength maxolen: Int) -> NSData? {
         var off : Int = 0
-        var slen : Int = count(s)
+        var slen : Int = s.characters.count
         var olen : Int = 0
         var result : [Int8] = [Int8](count: maxolen, repeatedValue: 0)
 
@@ -713,7 +715,7 @@ class JKBCrypt: NSObject {
         var rounds : Int
         var i      : Int
         var j      : Int
-        var clen   : Int = 6
+        let clen   : Int = 6
         var cdata  : [Int32] = bf_crypt_ciphertext
 
         if numberOfRounds < 4 || numberOfRounds > 31 {
@@ -752,7 +754,7 @@ class JKBCrypt: NSObject {
         }
 
         deinitKey()
-        return NSData(bytes: result, length: count(result))
+        return NSData(bytes: result, length: result.count)
     }
 
     /**
@@ -803,20 +805,20 @@ class JKBCrypt: NSObject {
     */
     private func initKey() {
         // p = P_orig
-        p = UnsafeMutablePointer<Int32>.alloc(count(P_orig))
-        p.initializeFrom(UnsafeMutablePointer<Int32>(P_orig), count: count(P_orig))
+        p = UnsafeMutablePointer<Int32>.alloc(P_orig.count)
+        p.initializeFrom(UnsafeMutablePointer<Int32>(P_orig), count: P_orig.count)
 
         // s = S_orig
-        s = UnsafeMutablePointer<Int32>.alloc(count(S_orig))
-        s.initializeFrom(UnsafeMutablePointer<Int32>(S_orig), count: count(S_orig))
+        s = UnsafeMutablePointer<Int32>.alloc(S_orig.count)
+        s.initializeFrom(UnsafeMutablePointer<Int32>(S_orig), count: S_orig.count)
     }
 
     private func deinitKey() {
         p.destroy()
-        p.dealloc(count(P_orig))
+        p.dealloc(P_orig.count)
 
         s.destroy()
-        s.dealloc(count(S_orig))
+        s.dealloc(S_orig.count)
     }
 
     /**
@@ -833,11 +835,11 @@ class JKBCrypt: NSObject {
         var lr    : [Int32] = [0, 0]
         // var lr    : UnsafeMutablePointer<Int32> = UnsafeMutablePointer<Int32>.alloc(2)
         // lr[0] = 0; lr[1] = 0
-        var plen  : Int = 18
-        var slen  : Int = 1024
+        let plen  : Int = 18
+        let slen  : Int = 1024
 
-        var keyPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(key.bytes)
-        var keyLength : Int = key.length
+        let keyPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(key.bytes)
+        let keyLength : Int = key.length
 
         for i = 0; i < plen; i++ {
             p[i] = p[i] ^ JKBCrypt.streamToWordWithData(keyPointer, ofLength: keyLength, off: &koffp)
@@ -873,13 +875,13 @@ class JKBCrypt: NSObject {
         var lr    : [Int32] = [0, 0]
         // var lr    : UnsafeMutablePointer<Int32> = UnsafeMutablePointer.alloc(2)
         // lr[0] = 0; lr[1] = 0
-        var plen  : Int = 18
-        var slen  : Int = 1024
+        let plen  : Int = 18
+        let slen  : Int = 1024
 
-        var keyPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(key.bytes)
-        var keyLength : Int = key.length
-        var dataPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(data.bytes)
-        var dataLength : Int = data.length
+        let keyPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(key.bytes)
+        let keyLength : Int = key.length
+        let dataPointer : UnsafeMutablePointer<Int8> = UnsafeMutablePointer<Int8>(data.bytes)
+        let dataLength : Int = data.length
         
         for i = 0; i < plen; i++ {
             p[i] = p[i] ^ JKBCrypt.streamToWordWithData(keyPointer, ofLength: keyLength, off:&koffp)

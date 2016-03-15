@@ -43,8 +43,8 @@ class JKBCryptRandom : NSObject {
             high = first
         }
 
-        var modular = UInt32((high - low) + 1)
-        var random : UInt32 = arc4random()
+        let modular = UInt32((high - low) + 1)
+        let random : UInt32 = arc4random()
 
         return Int32(random % modular) + low
     }
@@ -103,12 +103,12 @@ class JKBCryptRandom : NSObject {
         :returns: Int? Int if `length` is properly set and `sequence` is not nil; nil otherwise.
     */
     class func chooseNumberFromSequence(sequence: [Int32], ofLength length: Int) -> Int32? {
-        if length < 1 || length > count(sequence) {
+        if length < 1 || length > sequence.count {
             return nil
         }
 
         // Generate a random index into the sequence
-        var number = JKBCryptRandom.generateNumberBetween(0, Int32(length - 1))
+        let number = JKBCryptRandom.generateNumberBetween(0, Int32(length - 1))
 
         return sequence[Int(number)]
     }
@@ -123,7 +123,7 @@ class JKBCryptRandom : NSObject {
         :returns: Bool      TRUE if `number` is found in sequence, FALSE if not found.
     */
     class func isNumber(number: Int32, inSequence sequence: [Int32], ofLength length: Int) -> Bool {
-        if length < 1 || length > count(sequence) {
+        if length < 1 || length > sequence.count {
             return false
         }
 
@@ -198,7 +198,7 @@ class JKBCryptRandom : NSObject {
         var randomString : String = String()
 
         for var i = 0; i < length; i++ {
-            var nextCharacter = UnicodeScalar(UInt8(sequence[i]))
+            let nextCharacter = UnicodeScalar(UInt8(sequence[i]))
             randomString.append(nextCharacter)
         }
 
