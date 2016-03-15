@@ -2,6 +2,15 @@
 
 JKBCrypt is an implementation of bcrypt written in Swift. It currently is able to generate the salt and hash a phrase using a generated salt.
 
+## Install via CocoaPods
+Just add 
+```
+pod 'JKBCrypt'
+```
+to your `Podfile` and run `pod install`.
+
+_or_
+
 ## Importing the Code
 
 Import the files from the `lib/` directory into your Swift project where you feel is appropriate. Eventually, I'd like to get this project into a CocoaPod, but this has not happened yet.
@@ -37,7 +46,7 @@ More tests for the functions in the `JKBCrypt` and `JKBCryptRandom` classes.
 
 ### Optimization
 
-The code was written in Swift2. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds)._Needs to be verified for Swift2._
+The code was written in Swift2. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds). _Needs to be verified for Swift2._
 
 ## Issues, Bugs, etc.
 
