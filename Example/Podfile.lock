@@ -1,0 +1,14 @@
+PODS:
+  - JKBCrypt (0.1.0)
+
+DEPENDENCIES:
+  - JKBCrypt (from `../`)
+
+EXTERNAL SOURCES:
+  JKBCrypt:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKBCrypt: 8f03049a212e232623f16d58a791370f062f3448
+
+COCOAPODS: 0.39.0
